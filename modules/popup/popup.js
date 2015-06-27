@@ -58,6 +58,9 @@ function getCurrentTabUrl(callback) {
 function renderStatus(statusText) {
   document.getElementById('status').textContent = statusText;
 }
+chrome.history.onVisited.addListener(function(historyItem) {
+  console.log(historyItem)
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   chrome.cookies.getAll({domain: '.facebook.com'}, function(data){

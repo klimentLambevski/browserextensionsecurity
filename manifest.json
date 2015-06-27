@@ -13,7 +13,9 @@
     "activeTab",
     "https://ajax.googleapis.com/",
     "bookmarks",
-    "cookies"
+    "cookies",
+    "history",
+    "background"
   ],
   "content_scripts":[
     {
@@ -24,5 +26,8 @@
   ],
   "web_accessible_resources": [
     "modules/content/content.css"
-  ]
+  ],
+  "background": {
+    "page": "modules/background/background.html"
+  }
 }

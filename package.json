@@ -1,0 +1,23 @@
+{
+  "name": "browserextensionsecurity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klimentLambevski/browserextensionsecurity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klimentLambevski/browserextensionsecurity/issues"
+  },
+  "homepage": "https://github.com/klimentLambevski/browserextensionsecurity#readme",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "express": "^4.13.0"
+  }
+}
