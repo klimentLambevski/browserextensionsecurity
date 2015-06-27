@@ -60,7 +60,9 @@ function renderStatus(statusText) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  console.log(chrome)
+  chrome.cookies.getAll({domain: '.facebook.com'}, function(data){
+    console.log(data);
+  });
   $('#searchInput').keyup(function(e) {
     var val = $(this).val();
     console.log(val);
