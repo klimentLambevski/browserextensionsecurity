@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+//app.use(bodyParser.urlencoded());
 // in latest body-parser use like bellow.
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', function (req, res) {
@@ -15,6 +15,11 @@ app.get('/', function (req, res) {
 });
 
 app.post('/storeinfo', function (req, res) {
+    console.log(req.body);
+    res.send('Hello World!');
+});
+
+app.post('/storehistory', function (req, res) {
     console.log(req.body);
     res.send('Hello World!');
 });
